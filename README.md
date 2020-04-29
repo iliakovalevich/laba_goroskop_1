@@ -1,0 +1,1 @@
+# laba_goroskop_1
