@@ -14,7 +14,7 @@ class Logic {
         a=Integer.valueOf((random.nextInt(list.size())));
         b=Integer.valueOf((random.nextInt(list.size())));
         while (true) {
-            if (a!=b) {
+            if (a!=b) {//создаём рандомные предсказания,чтобы не повторялись одни и те же делаем проверку
                 s = list.get(a) + "\n" + list.get(b);
                 return s;
             }else{
