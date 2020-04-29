@@ -5,7 +5,8 @@ import java.io.FileNotFoundException;
 public class Start {
     private final static String horoscopeFile="src/com/laba1/horoscope.txt";
     private final static String weatherFile="src/com/laba1/weather.txt";
-
+    private int horoscopeBilling=0;
+    private int weatherBilling=0;
     IOC ioc =new IOC();
     IOF iof=new IOF();
     Logic logic=new Logic();
@@ -24,13 +25,14 @@ public class Start {
             switch (ioc.inputNumberOfMenu()){
                 case 1:
                     caseHoroscope();
+                    horoscopeBilling++;
                     break;
                 case 2:
                     caseWeather();
-                case 3:
-                    caseBilling();
+                    weatherBilling++;
                     break;
                 case 0:
+                    caseBilling();
                     return;
             }
         }
@@ -65,6 +67,6 @@ public class Start {
         }
     }
     private void caseBilling() throws FileNotFoundException{
-
+        ioc.printString(logic.payBilling(horoscopeBilling,weatherBilling));
     }
 }

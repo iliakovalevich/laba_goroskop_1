@@ -33,4 +33,12 @@ class Logic {
     protected String randomWeather(ArrayList<String> list){
         return list.get(Integer.valueOf((random.nextInt(list.size()))));
     }
+    protected String payBilling(int horoscopeBilling,int weatherBilling) {
+        double horoscopeCost=3.0;
+        double weatherCost=2.0;
+        return ("horoscope 3.0$"+"\n"+"weather 2.0$"+"\n"
+                +"You used the horoscope "+horoscopeBilling+" times "+"3.0$ x "+horoscopeBilling+" = "+horoscopeBilling*horoscopeCost+"\n"
+                +"You used the forecast weather "+weatherBilling+" times "+"2.0$ x "+weatherBilling+" = "+weatherBilling*weatherCost+"\n"+
+                "You have to pay "+((horoscopeBilling*horoscopeCost)+(weatherBilling*horoscopeCost))+"$");
+    }
 }

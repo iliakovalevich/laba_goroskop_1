@@ -11,9 +11,8 @@ public class IOC  {
         System.out.println(s);
     }
     public void printMenu(){
-        System.out.println("1-horoscope.txt");
+        System.out.println("1-horoscope");
         System.out.println("2-weather forecast");
-        System.out.println("3-billing services");
         System.out.println("0-exit");
     }
     public int inputNumberOfMenu(){
