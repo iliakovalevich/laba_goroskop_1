@@ -66,7 +66,7 @@ public class Start {
                 break;
         }
     }
-    private void caseBilling() throws FileNotFoundException{
+    private void caseBilling() {
         ioc.printString(logic.payBilling(horoscopeBilling,weatherBilling));
     }
 }
