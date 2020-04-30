@@ -1,6 +1,8 @@
-package com.laba1;
+package laba1;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.Random;
 
 class Logic {

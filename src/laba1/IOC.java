@@ -1,4 +1,4 @@
-package com.laba1;
+package laba1;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

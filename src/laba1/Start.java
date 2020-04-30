@@ -1,4 +1,4 @@
-package com.laba1;
+package laba1;
 
 import java.io.FileNotFoundException;
 
